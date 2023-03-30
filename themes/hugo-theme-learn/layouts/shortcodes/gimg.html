@@ -1,0 +1,4 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<a href="https://twc-pedia-data.teamworkinsight.com/img/{{ .Get "src" }}" data-featherlight="image">
+<img src="https://twc-pedia-data.teamworkinsight.com/img/{{ .Get "src" }}?width={{ .Get "width" | default "600px" }}" alt="{{ .Get "alt" | default " " }}" title="{{ .Get "title" | default "" }}" style="width: {{ .Get "width" | default "600px" }}; height: auto;">
+</a>

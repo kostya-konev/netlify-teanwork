@@ -1,0 +1,41 @@
+baseURL = "https://twdocs-api.netlify.app/"
+languageCode = "en-us"
+title = "Teamwork Docs"
+theme = "hugo-theme-learn"
+
+contentDir = "content"
+layoutDir = "layouts"
+publishDir = "public"
+buildDrafts = false
+
+[params]
+themeVariant = "blue"
+landingPageURL = "/index.html"
+author = "kkoniev"
+description = "Teamwork Documentation Hub"
+ordersectionsby = "weight" 
+disableInlineCopyToClipBoard = "true"
+disableNextPrev = "true"
+
+[outputs]
+home = [ "HTML", "RSS", "JSON"]
+
+
+[markup.tableOfContents]
+    ordered = false
+    startLevel = 2
+    endLevel = 3
+
+[markup.goldmark.renderer]
+    unsafe = true
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-globe'></i> Teamwork Commerce Website"
+url = "https://teamworkcommerce.com"
+weight = 21
+
+[[menu.shortcuts]] 
+name = "<i class='fas fa-book-open'></i> Teamworkpedia"
+url = "https://teamworkpedia.com"
+weight = 22
+

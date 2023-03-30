@@ -1,0 +1,6 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<div style="width: {{ .Get "width" | default "40rem" }}; margin: auto;">
+<video style="width:{{ .Get "width" | default "40rem" }};" controls>
+<source src="https://twc-pedia-data.teamworkinsight.com/video/{{ .Get "src" }}">
+</video>
+</div>

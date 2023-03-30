@@ -1,0 +1,17 @@
+.highlight-wrapper {
+    position: relative;
+}
+
+.highlight-link {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+p:contains Build {margin-top: 0!important;}
+
+.split-list ul {    
+    -webkit-column-count: 2;
+    -moz-column-count: 2;
+    column-count: 3;
+}  

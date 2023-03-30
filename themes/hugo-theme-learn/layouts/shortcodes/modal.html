@@ -1,0 +1,18 @@
+<div id='{{ .Get "flagname" }}' class='identity-note-modal {{ .Get "type" | default "note" }}'>
+<span class="identity-warn-modal-close" id='{{ .Get "flagname" }}close'>&times;</span>
+<div class="identity-warn-modal-content">      
+<p>{{ .Inner }}</p>
+</div>  
+</div>
+<script>
+var modalShown = localStorage.getItem('{{ .Get "flagname" }}');
+var modal = document.getElementById('{{ .Get "flagname" }}');
+var closespan = document.getElementById('{{ .Get "flagname" }}close');
+if (modalShown != 'true') {
+modal.style.display = "inline-block";
+}
+closespan.onclick = function() {
+localStorage.setItem('{{ .Get "flagname" }}', true);
+modal.style.display = "none";
+}
+</script>
